@@ -1,0 +1,197 @@
+*{
+    margin:0;
+}
+
+body{
+    background: #E0E8FF;
+    background-image: url(./images/pattern-background-mobile.svg);
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.card{
+    width: 327px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+}
+
+.girl-enjoying{
+    width: 100%;
+    overflow:hidden;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.content{
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    color: #1F2E55;
+    text-align: center;
+    font-family: Red Hat Display;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    width: 263px;
+}
+
+.description{
+    color: #717FA6;
+    text-align: center;
+    font-family: Red Hat Display;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px; /* 166.667% */
+    width: 263px;
+    margin-top: 15px;
+}
+
+.planDiv{
+    width: 100%;
+    padding: 17px;
+    border-radius: 11px;
+    background: #F7F9FF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.annual{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cost-container{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.plan{
+    color: #1F2E55;
+    font-weight: 900;
+}
+
+.payment{
+    color: #717FA6;
+    font-weight: 500;
+}
+
+.change{
+    color: #382AE1;
+    font-family: Red Hat Display;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    transition: 1s;
+}
+
+.change:hover{
+    text-decoration: none;
+    transition: 1s;
+    color: #766CF1;
+}
+
+.proceed{
+    color: #FFF;
+    font-family: Red Hat Display;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-top: 24px;
+    border: none;
+    cursor: pointer;
+    width: 279px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    background: #382AE1;
+    box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+    transition: 1s;
+}
+
+.proceed:hover{
+    background: #766CF1;
+    transition: 1s;
+}
+
+.cancel{
+    color: #717FA6;
+    font-family: Red Hat Display;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    transition: 1s;
+    cursor: pointer;
+    margin-top: 32px;
+}
+
+.cancel:hover{
+    color: #1F2E55;
+    transition: 1s;
+}
+
+@media screen and (min-width: 1440px){
+    body{
+      background-image: url(./images/pattern-background-desktop.svg);  
+    }
+
+    .card{
+        width: 450px;
+    }
+
+    .content{
+        padding: 45px 48px 48px
+    }
+
+    .title{
+        font-size: 28px;
+    }
+
+    .description, .cost-container{
+        font-size: 16px;
+    }
+
+    .description{
+        margin-top: 17px;
+    }
+
+    .planDiv{
+        margin-top: 20px;
+    }
+
+    .change{
+        font-size: 14px;
+    }
+    .proceed{
+        margin-top: 32px;
+    }
+
+    .cancel{
+        margin-top: 32px;
+    }
+    
+    .info{
+        margin-top: 0;
+    }
+}
